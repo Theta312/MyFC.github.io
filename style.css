@@ -1,0 +1,509 @@
+/*general*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cornflowerblue;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+
+header {
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+}
+/*main title*/
+
+
+.main-title {
+    
+    justify-content: center;
+    min-width: 20%;
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 65%;
+    flex-shrink: 1;
+    margin: 2px;
+    justify-content: center;
+    display: flex;
+    background-color: hsl(0, 0%, 75.3%);
+    align-items: center;
+}
+
+.main-title h1 {
+    border-bottom: 1px solid hsl(0, 0%, 0%);
+    margin: 0 0 0 30px;
+    display: flex;
+    flex-shrink: 1;
+    max-width: 50%;
+    min-width: 20%;
+    font-style: italic;
+    border-radius: 7px;
+    max-height: 40%;
+    min-height: 30%;
+}
+
+/*Nav*/
+
+nav {
+    
+    display: flex;
+    max-width: 99%;
+    min-width: 40%;
+    flex-shrink: 1;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    
+}
+
+nav ul {
+    
+    display: flex;
+    flex-shrink: 1;
+    max-width: 100%;
+    min-width: 30%;
+    max-height: 90%;
+    min-height: 30%;
+    justify-content: center;
+}
+
+nav a {
+    
+    display: flex;
+    flex-shrink: 1;
+    color: hsl(0, 0%, 0%);
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+
+.btn {
+    border: 2px solid hsl(0, 0%, 0%);
+    display: flex;
+    flex-shrink: 1;
+    margin: 5px 15px;
+    font-size: 1.6em;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 75.3%);
+    box-shadow: 3px 2px 5px hsl(230, 100%, 50%);
+}
+
+.btn:hover {
+    background-color: hsl(0, 0%, 84%);
+    cursor: pointer;
+    box-shadow: 10px 5px 5px hsl(230, 100%, 50%);
+}
+
+.btn:active {
+    background-color: hsl(0, 0%, 65.3%);
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    box-shadow: -4px 0px 5px hsl(0, 0%, 65.3%);
+}
+
+
+@media only screen and (max-width: 480px) { nav {
+    display: none;
+}
+
+header {
+   
+    width: 550px;
+    display: flex;
+}
+
+.main-title {
+    height: 300px;
+    width: 100%;
+}
+
+.main-title h1 {
+    
+    width: 100%;
+    position: relative;
+    bottom: 30px;
+    left: 40px;
+    height: 100%;
+    flex-shrink: none;
+    border: none;
+}
+
+}
+
+@media only screen and (max-width: 900px) { nav {
+    display: none;
+}
+
+.main-title {
+    border: 1px solid blue;
+    height: 300px;
+
+}
+
+.main-title h1 {
+    border: none;
+   
+}
+
+}
+
+
+/*History section*/
+
+.History {
+    
+    display: flex;
+    flex-direction: column;
+    max-height: 1200px;
+    min-height: 800px;
+    max-width: 100%;
+    min-width: 30%;
+    background-color: hsl(0, 0%, 0%);
+}
+
+.banner {
+    
+    max-height: 50%;
+    min-height: 30%;
+    display: flex;
+    padding: 2px;
+    flex-shrink: 1;
+    justify-content: center;
+}
+
+.banner figure {
+    
+    display: flex;
+    flex-shrink: 1;
+    justify-content: center;
+    max-height: 100%;
+    min-height: 50%;
+    max-width: 80%;
+    min-width: 40%;
+    background-color: hsl(0, 0%, 84%);
+    border-radius: 6px;
+}
+
+.banner img {
+    
+    display: flex;
+    flex-shrink: 2;
+    max-height: 100%;
+    min-height: 40%;
+    max-width: 90%;
+    min-width: 60%;
+    
+}
+
+.article {
+    
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    min-width: 50%;
+    max-height: 350px;
+    min-height: 250px;
+    align-items: center;
+}
+
+.article section {
+    
+    display: flex;
+    flex-shrink: 1;
+    justify-content: center;
+    max-height: 200px;
+    min-height: 100px;
+    min-width: 30%;
+    max-width: 100%;
+    display: flex;
+    flex-shrink: 1;
+}
+.article article {
+   
+    align-items: center;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    flex-wrap: nowrap;
+    max-height: 100%;
+    min-height: 60%;
+    max-width: 70%;
+    min-width: 60%;
+}
+.article h2 {
+   
+    color: hsl(0, 0%, 84%);
+    text-shadow: 2px 2px 2px hsl(0, 0%, 75.3%);
+    display: flex;
+    flex-shrink: 1;
+    max-height: 90%;
+    min-height: 50%;
+    max-width: 80%;
+    min-width: 30%;
+    justify-content: center;
+    display: flex;
+    font-size: 2rem;
+}
+
+article p {
+    color: hsl(0, 0%, 84%);
+    flex-shrink: 2;
+    max-width: 80%;
+    min-width: 50%;
+    max-height: 80%;
+    min-height: 20%;
+    margin: 2px;
+    font-size: 1.23rem;
+    
+}
+
+@media only screen and (max-width: 480px) { .History {
+    border: 2px solid hsl(0, 0%, 100%);
+    position: relative;
+    left: 100px;
+}
+
+.article p {
+    margin-top: 20px;
+}
+
+
+
+
+}
+
+/*positions*/
+
+.positions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 3px;
+    min-height: 500px;
+    max-height: 800px;
+}
+
+.available {
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    min-height: 400px;
+    max-height: 700px;
+    flex-shrink: 1;
+}
+.positions h2 {
+    display: flex;
+    flex-shrink: 1;
+    font-size: 2.5rem;
+}
+
+.positions h3 {
+    flex-shrink: 2;
+    font-size: 2rem;
+    max-width: 100%;
+    min-width: 30%;
+    text-align: center;
+}
+
+.positions h4 {
+    flex-shrink: 1;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    margin: 7 3px;
+    max-width: 80%;
+    min-width: 60%;
+}
+
+.positions p {
+    flex-shrink: 1;
+    font-size: 1.3rem;
+    background-color: hsl(0, 0%, 100%);
+    min-height: 70%;
+    min-height: 40%;
+    margin: 4px;
+}
+
+
+.defence {
+    display: flex;
+
+    flex-direction: column;
+  
+}
+
+.midfield {
+    display: flex;
+ 
+    flex-direction: column;
+   
+}
+
+.offence {
+    display: flex;
+
+    flex-direction: column;
+   
+}
+
+
+.defence,
+.midfield ,
+.offence {
+    margin: 0 30px;
+    max-height: 100%;
+    min-height: 50%;
+    min-width: 200px;
+    max-width: 300px;
+    background-color: hsl(0, 0%, 75.3%);
+    border-radius: 5px;
+    align-items: center;
+    border: 2px solid hsl(0, 0%, 0%);
+    flex-shrink: 2;
+}
+
+
+
+@media only screen and (max-width: 480px) { .positions {
+    display: flex;
+    width: 580px;
+    height: 1200px;
+}
+
+.available {
+    display: flex;
+    flex-shrink: 1;
+    width: 500px;
+    height: 600px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.defence,
+.midfield ,
+.offence {
+    padding: none;
+    flex-shrink: 1;
+    display: flex;
+    margin: 4px 0;
+    height: 70%;
+    width: 99%;
+}
+
+.positions p {
+    flex-shrink: 2;
+    width: 83%;
+    height: 80%;
+}
+
+
+}
+
+/*contacts/footer*/
+
+#contact {
+    border: 1px solid hsl(0, 0%, 0%);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    min-height: 400px;
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 100px;
+    align-items: center;
+}
+
+#contact h2 {
+    flex-shrink: 1;
+    text-align: center;
+    font-size: 2.5rem;
+    min-height: 30px;
+    max-height: 100px;
+    min-width: 50%;
+    max-width: 80%;
+}
+
+.location {
+    
+    display: flex;
+    flex-shrink: 1;
+    justify-content: center;
+    max-height: 500px;
+    min-height: 270px;
+    max-width: 100%;
+    min-width: 60%;
+}
+
+.GR {
+    border: 3px solid hsl(0, 0%, 0%);
+    margin: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    flex-shrink: 1;
+}
+
+.Chicago {
+    border: 3px solid hsl(0, 0%, 0%);
+    margin: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    flex-shrink: 1;
+}
+
+.location h3 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 2px;
+    font-size: 1.5rem;
+}
+
+
+ul {
+   
+    min-height: 40%;
+    max-height: 99%;
+}
+
+li {
+    min-height: 50%;
+    max-height: 90%;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 480px) { #contact {
+    border: 3px solid hsl(0, 0%, 0%);
+    position: relative;
+    left: 30px;
+    top: 600px;
+    width: 500px;
+}
+
+}
